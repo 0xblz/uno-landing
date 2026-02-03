@@ -1,0 +1,87 @@
+// Main layout
+main {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    position: relative;
+    min-height: 100vh;
+    width: 100%;
+    background: white;
+    overflow: hidden;
+}
+
+// Sections
+section {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 80vh;
+    width: 100%;
+    padding: 4rem 1.5rem;
+    gap: 8rem;
+    z-index: 1;
+    overflow: hidden;
+
+    @media (max-width: 720px) {
+        flex-direction: column-reverse;
+        gap: 0;
+    }
+
+    &:first-child {
+        min-height: 100vh;
+
+        @media (max-width: 720px) {
+            min-height: 100dvh;
+            justify-content: flex-start;
+            padding-bottom: 3rem;
+        }
+    }
+
+    &:nth-child(even) {
+        flex-direction: row-reverse;
+
+        @media (max-width: 720px) {
+            flex-direction: column-reverse;
+        }
+    }
+
+    &:last-child {
+        flex-direction: row;
+        flex-wrap: wrap;
+        min-height: auto;
+    }
+}
+
+// Section variants
+.dark {
+    background-color: var(--slate-900);
+    color: white;
+
+    h1 { color: white; }
+    h2 { color: var(--slate-300); }
+    hr {
+        width: 100%;
+        border: none;
+        border-top: 1px solid var(--slate-800);
+    }
+}
+
+.spiral {
+    background-image: url('/assets/images/spiral.png');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+
+    @media (max-width: 720px) {
+        background-size: auto 100%;
+        padding-bottom: 4rem;
+    }
+}
+
+// Dividers
+hr {
+    width: 100%;
+    border: none;
+    border-top: 1px solid var(--slate-100);
+}

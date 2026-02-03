@@ -1,0 +1,49 @@
+// Typography
+body {
+    font-family: 'Inter', sans-serif;
+    font-size: 16px;
+    color: var(--slate-900);
+}
+
+h1 {
+    font-size: 24px;
+    font-weight: 900;
+    line-height: 1.4;
+}
+
+h2 {
+    font-size: 18px;
+    font-weight: 600;
+    line-height: 1.4;
+}
+
+h3 {
+    font-size: 14px;
+    font-weight: 900;
+    line-height: 1.4;
+}
+
+h4 {
+    font-size: 13px;
+    font-weight: 700;
+    line-height: 1.4;
+}
+
+p {
+    font-size: 1rem;
+    font-weight: 500;
+    line-height: 1.4;
+}
+
+a {
+    color: var(--slate-900);
+    text-decoration: none;
+    font-weight: 900;
+    transition: color 0.2s ease-in-out;
+
+    &:hover,
+    &:focus,
+    &:active {
+        color: var(--slate-500);
+    }
+}

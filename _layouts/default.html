@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>{% if page.title %}{{ page.title }}{% else %}{{ site.title }}{% endif %}</title>
+    <meta name="description" content="{% if page.description %}{{ page.description }}{% endif %}">
+    <link rel="stylesheet" href="assets/css/main.css">
+    <link rel="icon" type="image/png" href="assets/images/favicon.png">
+    
+    <meta property="og:title" content="UNO">
+    <meta property="og:description" content="One place for all your tokens.">
+    <meta property="og:image" content="assets/images/og.jpg">
+    <meta property="og:url" content="https://home.unoapp.xyz">
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="UNO">
+    <meta name="twitter:description" content="One place for all your tokens.">
+    <meta name="twitter:image" content="assets/images/og.jpg">
+    
+</head>
+<body>
+    <main>
+        {{ content }}
+    </main>
+</body>
+</html> 
