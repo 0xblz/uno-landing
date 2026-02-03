@@ -2,15 +2,6 @@
 
 Landing page for UNO - the #1 wallet on World Chain.
 
-## About
-
-UNO is a crypto wallet app that lets users:
-- Save dollars securely in USDC
-- Earn interest at up to 9% APY
-- Swap tokens
-- Send and receive money
-- Earn rewards and prizes
-
 ## Tech Stack
 
 - Jekyll (static site generator)
